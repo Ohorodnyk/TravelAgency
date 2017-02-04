@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+
+<tiles-definitions>  
+ 
+   <!-- Base Definition -->
+   <definition name="base-definition" 
+       template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />  
+   </definition>  
+ 
+   <!-- Home Page -->
+   <definition name="home" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />  
+   </definition>  
+
+   <!-- Cities Page -->
+   <definition name="cities" extends="base-definition">  
+       <put-attribute name="title" value="Cities" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/city/showCities.jsp" />  
+   </definition> 
+   
+   
+   <!-- Countries Page -->
+   <definition name="countries" extends="base-definition">  
+       <put-attribute name="title" value="Countries" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/country/showCountries.jsp" />  
+   </definition>  
+   
+   
+   <!-- Hotel Form Page -->
+   <definition name="hotelForm" extends="base-definition">  
+       <put-attribute name="title" value="Hotel Form" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/hotel/hotelForm.jsp" />  
+   </definition>  
+   
+   
+   <!-- Hotel Form2 Page -->
+   <definition name="hotelForm2" extends="base-definition">  
+       <put-attribute name="title" value="Hotel Form" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/hotel/hotelForm2.jsp" />  
+   </definition>  
+   
+   <!-- Hotel Form3 Page -->
+   <definition name="hotelForm3" extends="base-definition">  
+       <put-attribute name="title" value="Hotel Form" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/hotel/hotelForm3.jsp" />  
+   </definition>  
+   
+      <!-- Hotel Form4 Page -->
+   <definition name="hotelForm4" extends="base-definition">  
+       <put-attribute name="title" value="Hotel Form" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/hotel/hotelForm4.jsp" />  
+   </definition>  
+   
+   <!-- Hotels Page -->
+   <definition name="hotels" extends="base-definition">  
+       <put-attribute name="title" value="Hotels" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/hotel/showHotels.jsp" />  
+   </definition> 
+   
+   <!-- Hotels Free Roooms Page -->
+   <definition name="freeRooms" extends="base-definition">  
+       <put-attribute name="title" value="Free Rooms" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/hotel/freeRooms.jsp" />  
+   </definition> 
+   
+   <!-- Avaliable Hotels Page -->
+   <definition name="avaliableHotels" extends="base-definition">  
+       <put-attribute name="title" value="Avaliable Hotels" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/hotel/avaliableHotels.jsp" />  
+   </definition>  
+   
+   <!-- Reverse Hotel Page -->
+   <definition name="reserveHotel" extends="base-definition">  
+       <put-attribute name="title" value="Reserve Hotel" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/client/reserveHotel.jsp" />  
+   </definition>  
+   
+    <!-- Visa Form Page -->
+   <definition name="visaForm" extends="base-definition">  
+       <put-attribute name="title" value="Visa Form" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/visa/visaForm.jsp" />  
+   </definition> 
+   
+       <!-- Client Form -->
+   <definition name="clientForm" extends="base-definition">  
+       <put-attribute name="title" value="Client Form" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/client/clientForm.jsp" />  
+   </definition> 
+          <!-- Client Form1 -->
+   <definition name="clientForm1" extends="base-definition">  
+       <put-attribute name="title" value="Client Form" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/client/clientForm1.jsp" />  
+   </definition> 
+   
+          <!-- Client Statistic -->
+   <definition name="clientStatistic" extends="base-definition">  
+       <put-attribute name="title" value="Client Statistic" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/client/clientStatistic.jsp" />  
+   </definition> 
+             <!-- Hotel Statistic -->
+   <definition name="hotelStatistic" extends="base-definition">  
+       <put-attribute name="title" value="Hotel Statistic" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/hotel/hotelStatistic.jsp" />  
+   </definition> 
+   
+    <!-- Visa Form2 Page -->
+   <definition name="visaForm2" extends="base-definition">  
+       <put-attribute name="title" value="Visa Form" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/visa/visaForm2.jsp" />  
+   </definition> 
+   
+ 
+  
+   <!-- Visa By Client Page -->
+   <definition name="visaByClient" extends="base-definition">  
+       <put-attribute name="title" value="Visas of Client" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/visa/visaByClient.jsp" />  
+   </definition> 
+   
+   
+   <!-- Count of Visas Page -->
+   <definition name="countOfVisas" extends="base-definition">  
+       <put-attribute name="title" value="Visas of Client" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/visa/CountOfVisasByCountry.jsp" />  
+   </definition>
+   
+   
+   <!-- Null Pointer error Page -->
+   <definition name="nullPointerError" extends="base-definition">  
+       <put-attribute name="title" value="Error" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/error/NullPointer.jsp" />  
+   </definition> 
+   
+   
+   <!-- Parse error Page -->
+   <definition name="parseError" extends="base-definition">  
+       <put-attribute name="title" value="Error" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/error/ParseError.jsp" />  
+   </definition>  
+   
+   
+   
+   
+</tiles-definitions>
